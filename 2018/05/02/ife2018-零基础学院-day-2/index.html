@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="第二天：给自己做一个在线简历吧最后的验证，提出了几个问题，尝试解答一下">
+<meta name="keywords" content="IFE2018,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ife2018 零基础学院 day 2">
+<meta property="og:url" content="http://puzzledalien.github.io/2018/05/02/ife2018-零基础学院-day-2/index.html">
+<meta property="og:site_name" content="劝学园">
+<meta property="og:description" content="第二天：给自己做一个在线简历吧最后的验证，提出了几个问题，尝试解答一下">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-05-10T23:43:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ife2018 零基础学院 day 2">
+<meta name="twitter:description" content="第二天：给自己做一个在线简历吧最后的验证，提出了几个问题，尝试解答一下">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://puzzledalien.github.io/2018/05/02/ife2018-零基础学院-day-2/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>ife2018 零基础学院 day 2 | 劝学园</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">劝学园</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/PuzzledAlien" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://puzzledalien.github.io/2018/05/02/ife2018-零基础学院-day-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一汪清水徐徐入梦">
+      <meta itemprop="description" content="不经一番寒彻骨，怎得梅花扑鼻香。 若无苦学，怎得甜果。">
+      <meta itemprop="image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="劝学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ife2018 零基础学院 day 2
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-02 16:57:18" itemprop="dateCreated datePublished" datetime="2018-05-02T16:57:18+08:00">2018-05-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-11 07:43:14" itemprop="dateModified" datetime="2018-05-11T07:43:14+08:00">2018-05-11</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/" itemprop="url" rel="index"><span itemprop="name">CSDN</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/前端/IFE/" itemprop="url" rel="index"><span itemprop="name">IFE</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/前端/IFE/IFE2018/" itemprop="url" rel="index"><span itemprop="name">IFE2018</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2018/05/02/ife2018-零基础学院-day-2/" class="leancloud_visitors" data-flag-title="ife2018 零基础学院 day 2">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>第二天：给自己做一个在线简历吧<br>最后的验证，提出了几个问题，尝试解答一下<br><a id="more"></a></p>
+<h1 id="HTML是什么，HTML5是什么"><a href="#HTML是什么，HTML5是什么" class="headerlink" title="HTML是什么，HTML5是什么"></a>HTML是什么，HTML5是什么</h1><p>HTML的定义摘抄自w3school的<a href="http://www.w3school.com.cn/html/html_jianjie.asp" target="_blank" rel="noopener">HTML 简介</a></p>
+<blockquote>
+<p>HTML 是用来描述网页的一种语言。</p>
+<ul>
+<li>HTML 指的是超文本标记语言 (<code>H</code>yper <code>T</code>ext <code>M</code>arkup <code>L</code>anguage)</li>
+<li>HTML 不是一种编程语言，而是一种<strong>标记语言</strong> (markup language)</li>
+<li>标记语言是一套<strong>标记标签</strong> (markup tag)</li>
+<li>HTML 使用<strong>标记标签</strong>来描述网页</li>
+</ul>
+</blockquote>
+<p>HTML5的定义也摘抄自w3school的<a href="http://www.w3school.com.cn/html5/html_5_intro.asp" target="_blank" rel="noopener">HTML 5 简介</a></p>
+<blockquote>
+<p><strong>HTML5是下一代的HTML</strong>，一个新版本的HTML。<br>HTML5 的一些规则：</p>
+<ul>
+<li>新特性应该基于 HTML、CSS、DOM 以及 JavaScript。</li>
+<li>减少对外部插件的需求（比如 Flash）</li>
+<li>更优秀的错误处理</li>
+<li>更多取代脚本的标记</li>
+<li>HTML5 应该独立于设备</li>
+<li>开发进程应对公众透明</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>新特性</strong><br>HTML5 中的一些有趣的新特性：</p>
+<ul>
+<li>用于绘画的 canvas 元素</li>
+<li>用于媒介回放的 video 和 audio 元素</li>
+<li>对本地离线存储的更好的支持</li>
+<li>新的特殊内容元素，比如 article、footer、header、nav、section</li>
+<li>新的表单控件，比如 calendar、date、time、email、url、search</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>浏览器支持</strong><br>最新版本的 Safari、Chrome、Firefox 以及 Opera 支持某些 HTML5 特性。Internet Explorer 9 将支持某些 HTML5 特性。</p>
+</blockquote>
+<h1 id="HTML元素、标签、属性都是什么概念？"><a href="#HTML元素、标签、属性都是什么概念？" class="headerlink" title="HTML元素、标签、属性都是什么概念？"></a>HTML元素、标签、属性都是什么概念？</h1><p>摘抄自<a href="http://www.w3school.com.cn/html/html_jianjie.asp" target="_blank" rel="noopener">HTML简介</a></p>
+<blockquote>
+<p><strong>HTML 标签</strong><br>HTML 标记标签通常被称为 HTML 标签 (HTML tag)。</p>
+<ul>
+<li>HTML 标签是由<strong>尖括号</strong>包围的关键词，比如 <code>&lt;html&gt;</code></li>
+<li>HTML 标签通常是<strong>成对出现</strong>的，比如 <code>&lt;b&gt;</code> 和 <code>&lt;/b&gt;</code></li>
+<li>标签对中的第一个标签是<strong>开始标签</strong>，第二个标签是<strong>结束标签</strong></li>
+<li>开始和结束标签也被称为<strong>开放标签</strong>和<strong>闭合标签</strong></li>
+</ul>
+</blockquote>
+<p>摘抄自<a href="http://www.w3school.com.cn/html/html_elements.asp" target="_blank" rel="noopener">HTML 元素</a></p>
+<blockquote>
+<p><strong>HTML 元素</strong><br>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。</p>
+</blockquote>
+<p>摘抄自<a href="http://www.w3school.com.cn/html/html_attributes.asp" target="_blank" rel="noopener">HTML 属性</a></p>
+<blockquote>
+<p><strong>属性为 HTML 元素提供附加信息。</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>HTML 属性</strong><br>HTML 标签可以拥有<strong>属性</strong>。属性提供了有关 HTML 元素的<strong>更多的信息</strong>。<br>属性总是以名称/值对的形式出现，比如：<strong>name=”value”</strong>。<br>属性总是在 HTML 元素的<strong>开始标签</strong>中规定。</p>
+</blockquote>
+<h1 id="文档类型是什么概念，起什么作用？"><a href="#文档类型是什么概念，起什么作用？" class="headerlink" title="文档类型是什么概念，起什么作用？"></a>文档类型是什么概念，起什么作用？</h1><p>摘抄自<a href="http://www.w3school.com.cn/html/html_doctype.asp" target="_blank" rel="noopener"><code>HTML &lt;!DOCTYPE&gt;</code></a><br>概念：</p>
+<blockquote>
+<p>它为浏览器提供一项信息（声明），即 HTML 是用什么版本编写的。</p>
+</blockquote>
+<p>作用：</p>
+<blockquote>
+<p><strong>&lt;!DOCTYPE&gt; 声明帮助浏览器正确地显示网页。</strong><br>HTML 也有多个不同的版本，只有完全明白页面中使用的确切 HTML 版本，浏览器才能完全正确地显示出 HTML 页面。</p>
+</blockquote>
+<h1 id="meta标签都用来做什么的？"><a href="#meta标签都用来做什么的？" class="headerlink" title="meta标签都用来做什么的？"></a>meta标签都用来做什么的？</h1><p>摘抄自<a href="http://www.w3school.com.cn/tags/tag_meta.asp" target="_blank" rel="noopener"><code>HTML &lt;meta&gt; 标签</code></a></p>
+<blockquote>
+<p><strong>定义和用法</strong><br><code>&lt;meta&gt;</code> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。<br><code>&lt;meta&gt;</code> 标签位于文档的头部，不包含任何内容。<code>&lt;meta&gt;</code> 标签的属性定义了与文档相关联的名称/值对。</p>
+</blockquote>
+<h1 id="Web语义化是什么，是为了解决什么问题"><a href="#Web语义化是什么，是为了解决什么问题" class="headerlink" title="Web语义化是什么，是为了解决什么问题"></a>Web语义化是什么，是为了解决什么问题</h1><p> Web语义化是指使HTML元素有更清晰的语义，例如HTML5的新增内容元素article、footer、header、nav、section。<br><a href="https://www.zhihu.com/question/20455165" target="_blank" rel="noopener">顾轶灵关于“如何理解 Web 语义化？”的回答</a>提到</p>
+<blockquote>
+<p>什么是语义化？其实简单说来就是让机器可以读懂内容。</p>
+</blockquote>
+<p> 摘自维基百科的词条<a href="https://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89%E5%8C%96" target="_blank" rel="noopener">语义化</a></p>
+<blockquote>
+<p>语义化是前端开发里面的一个专用术语，其优点在于标签语义化有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护。</p>
+</blockquote>
+<p> 从上述的文字中，对语义化解决什么问题，可以简单表述：</p>
+<ul>
+<li>使html结构更有序和清晰</li>
+<li>利于搜索引擎索引和抓取</li>
+<li>利于不同设备的显示</li>
+<li>利于团队开发和维护</li>
+</ul>
+<h1 id="链接是什么概念，对应什么标签？"><a href="#链接是什么概念，对应什么标签？" class="headerlink" title="链接是什么概念，对应什么标签？"></a>链接是什么概念，对应什么标签？</h1><p>摘抄自<a href="http://www.w3school.com.cn/html/html_links.asp" target="_blank" rel="noopener">HTML 链接</a></p>
+<blockquote>
+<p>超链接可以是一个字，一个词，或者一组词，也可以是一幅图像，您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。<br>当您把鼠标指针移动到网页中的某个链接上时，箭头会变为一只小手。<br>我们通过使用<code>&lt;a&gt;</code>标签在 HTML 中创建链接。<br>有两种使用<code>&lt;a&gt;</code>标签的方式：<br>1.通过使用 href 属性 - 创建指向另一个文档的链接<br>2.通过使用 name 属性 - 创建文档内的书签</p>
+</blockquote>
+<h1 id="常用标签都有哪些，都适合用在什么场景"><a href="#常用标签都有哪些，都适合用在什么场景" class="headerlink" title="常用标签都有哪些，都适合用在什么场景"></a>常用标签都有哪些，都适合用在什么场景</h1><p><a href="www.w3school.com.cn/tags/html_ref_byfunc.asp">HTML 参考手册-标签列表（功能排序）</a></p>
+<h1 id="表单标签都有哪些，对应着什么功能，都有哪些属性"><a href="#表单标签都有哪些，对应着什么功能，都有哪些属性" class="headerlink" title="表单标签都有哪些，对应着什么功能，都有哪些属性"></a>表单标签都有哪些，对应着什么功能，都有哪些属性</h1><p>摘抄自<a href="http://www.w3school.com.cn/tags/html_ref_byfunc.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/tags/html_ref_byfunc.asp</a></p>
+<blockquote>
+<p>表单</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;form&gt;</code></td>
+<td>定义供用户输入的 HTML 表单。</td>
+</tr>
+<tr>
+<td><code>&lt;input&gt;</code></td>
+<td>定义输入控件。</td>
+</tr>
+<tr>
+<td><code>&lt;textarea&gt;</code></td>
+<td>定义多行的文本输入控件。</td>
+</tr>
+<tr>
+<td><code>&lt;button&gt;</code></td>
+<td>定义按钮。</td>
+</tr>
+<tr>
+<td><code>&lt;select&gt;</code></td>
+<td>定义选择列表（下拉列表）。</td>
+</tr>
+<tr>
+<td><code>&lt;optgroup&gt;</code></td>
+<td>定义选择列表中相关选项的组合。</td>
+</tr>
+<tr>
+<td><code>&lt;option&gt;</code></td>
+<td>定义选择列表中的选项。</td>
+</tr>
+<tr>
+<td><code>&lt;label&gt;</code></td>
+<td>定义 input 元素的标注。</td>
+</tr>
+<tr>
+<td><code>&lt;fieldset&gt;</code></td>
+<td>定义围绕表单中元素的边框。</td>
+</tr>
+<tr>
+<td><code>&lt;legend&gt;</code></td>
+<td>定义 fieldset 元素的标题。</td>
+</tr>
+<tr>
+<td><code>&lt;isindex&gt;</code></td>
+<td>不赞成使用。定义与文档相关的可搜索索引。</td>
+</tr>
+<tr>
+<td><code>&lt;datalist&gt;</code></td>
+<td>定义下拉列表。</td>
+</tr>
+<tr>
+<td><code>&lt;keygen&gt;</code></td>
+<td>定义生成密钥。</td>
+</tr>
+<tr>
+<td><code>&lt;output&gt;</code></td>
+<td>定义输出的一些类型。</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>表单属性请查看<a href="http://www.w3school.com.cn/html/html_form_attributes.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/html/html_form_attributes.asp</a></p>
+<h1 id="ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方，举个例子"><a href="#ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方，举个例子" class="headerlink" title="ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方，举个例子"></a>ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方，举个例子</h1><p>参考自<a href="http://www.w3school.com.cn/html/html_lists.asp" target="_blank" rel="noopener">HTML 列表</a></p>
+<blockquote>
+<p><strong>无序列表</strong>始于 <code>&lt;ul&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Milk&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>显示如下</p>
+<ul>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+<blockquote>
+<p><strong>有序列表</strong>始于 <code>&lt;ol&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code> 标签。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;Coffee&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Milk&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>显示如下：</p>
+<ol>
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+<blockquote>
+<p><strong>自定义列表</strong>以 <code>&lt;dl&gt;</code>标签开始。每个自定义列表项以 <code>&lt;dt&gt;</code> 开始。每个自定义列表项的定义以 <code>&lt;dd&gt;</code>开始。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">&lt;dt&gt;Coffee&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;Black hot drink&lt;/dd&gt;</span><br><span class="line">&lt;dt&gt;Milk&lt;/dt&gt;</span><br><span class="line">&lt;dd&gt;White cold drink&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>显示如下：<br>Coffee<br>Black hot drink<br>Milk<br>White cold drink</p>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/IFE2018/" rel="tag"># IFE2018</a>
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/02/ife2018-零基础学院-day-1-我为什么想学前端/" rel="next" title="ife2018 零基础学院 day 1 - 我为什么想学前端">
+                <i class="fa fa-chevron-left"></i> ife2018 零基础学院 day 1 - 我为什么想学前端
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/04/ife2018-零基础学院-day-3/" rel="prev" title="ife2018 零基础学院 day 3">
+                ife2018 零基础学院 day 3 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/timg.jpg" alt="一汪清水徐徐入梦">
+            
+              <p class="site-author-name" itemprop="name">一汪清水徐徐入梦</p>
+              <div class="site-description motion-element" itemprop="description">不经一番寒彻骨，怎得梅花扑鼻香。 若无苦学，怎得甜果。</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/PuzzledAlien" title="GitHub &rarr; https://github.com/PuzzledAlien" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.zhihu.com/people/on-the-way23" title="知乎 &rarr; http://www.zhihu.com/people/on-the-way23" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>知乎</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://blog.csdn.net/u014654707" title="CSDN &rarr; http://blog.csdn.net/u014654707" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>CSDN</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.cnblogs.com/AlienXu/" title="博客园 &rarr; http://www.cnblogs.com/AlienXu/" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>博客园</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML是什么，HTML5是什么"><span class="nav-number">1.</span> <span class="nav-text">HTML是什么，HTML5是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML元素、标签、属性都是什么概念？"><span class="nav-number">2.</span> <span class="nav-text">HTML元素、标签、属性都是什么概念？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文档类型是什么概念，起什么作用？"><span class="nav-number">3.</span> <span class="nav-text">文档类型是什么概念，起什么作用？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#meta标签都用来做什么的？"><span class="nav-number">4.</span> <span class="nav-text">meta标签都用来做什么的？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web语义化是什么，是为了解决什么问题"><span class="nav-number">5.</span> <span class="nav-text">Web语义化是什么，是为了解决什么问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链接是什么概念，对应什么标签？"><span class="nav-number">6.</span> <span class="nav-text">链接是什么概念，对应什么标签？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用标签都有哪些，都适合用在什么场景"><span class="nav-number">7.</span> <span class="nav-text">常用标签都有哪些，都适合用在什么场景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表单标签都有哪些，对应着什么功能，都有哪些属性"><span class="nav-number">8.</span> <span class="nav-text">表单标签都有哪些，对应着什么功能，都有哪些属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方，举个例子"><span class="nav-number">9.</span> <span class="nav-text">ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方，举个例子</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一汪清水徐徐入梦</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'YYEIb4e1DglYCTimm82B7iq8-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'YYEIb4e1DglYCTimm82B7iq8-gzGzoHsz',
+                'X-LC-Key': 'uDaWgpHAtQyu55OhciRlDNv2',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

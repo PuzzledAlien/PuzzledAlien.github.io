@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="ife2018 零基础学院 第三天：让简历有点色彩">
+<meta name="keywords" content="IFE2018,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ife2018 零基础学院 day 3">
+<meta property="og:url" content="http://puzzledalien.github.io/2018/05/04/ife2018-零基础学院-day-3/index.html">
+<meta property="og:site_name" content="劝学园">
+<meta property="og:description" content="ife2018 零基础学院 第三天：让简历有点色彩">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://img-blog.csdn.net/20180504173144538?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180504173322750?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/2018050417345052?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180504173539653?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-05-10T03:38:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ife2018 零基础学院 day 3">
+<meta name="twitter:description" content="ife2018 零基础学院 第三天：让简历有点色彩">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180504173144538?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://puzzledalien.github.io/2018/05/04/ife2018-零基础学院-day-3/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>ife2018 零基础学院 day 3 | 劝学园</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">劝学园</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/PuzzledAlien" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://puzzledalien.github.io/2018/05/04/ife2018-零基础学院-day-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一汪清水徐徐入梦">
+      <meta itemprop="description" content="不经一番寒彻骨，怎得梅花扑鼻香。 若无苦学，怎得甜果。">
+      <meta itemprop="image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="劝学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ife2018 零基础学院 day 3
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-04 17:24:29" itemprop="dateCreated datePublished" datetime="2018-05-04T17:24:29+08:00">2018-05-04</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-10 11:38:24" itemprop="dateModified" datetime="2018-05-10T11:38:24+08:00">2018-05-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/" itemprop="url" rel="index"><span itemprop="name">CSDN</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/前端/IFE/" itemprop="url" rel="index"><span itemprop="name">IFE</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSDN/前端/IFE/IFE2018/" itemprop="url" rel="index"><span itemprop="name">IFE2018</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2018/05/04/ife2018-零基础学院-day-3/" class="leancloud_visitors" data-flag-title="ife2018 零基础学院 day 3">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="ife2018-零基础学院-第三天：让简历有点色彩"><a href="#ife2018-零基础学院-第三天：让简历有点色彩" class="headerlink" title="ife2018 零基础学院 第三天：让简历有点色彩"></a>ife2018 零基础学院 第三天：让简历有点色彩</h1><a id="more"></a>
+<h2 id="什么是CSS，CSS是如何工作的"><a href="#什么是CSS，CSS是如何工作的" class="headerlink" title="什么是CSS，CSS是如何工作的!"></a>什么是CSS，CSS是如何工作的!</h2><p>摘自<a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works" target="_blank" rel="noopener">CSS如何工作</a></p>
+<h3 id="什么是CSS"><a href="#什么是CSS" class="headerlink" title="什么是CSS"></a>什么是CSS</h3><blockquote>
+<p>CSS是一种用于向用户指定文档如何呈现的语言 — 它们如何被指定样式、布局等。<br><strong>文档</strong>通常是用标记语言结构化的文本文件 — HTML 是最常用的标记语言, 但你依然可以遇见一些其他的标记语言，比如 SVG 或者 XML。</p>
+</blockquote>
+<h3 id="CSS如何工作"><a href="#CSS如何工作" class="headerlink" title="CSS如何工作"></a>CSS如何工作</h3><blockquote>
+<p>当浏览器显示文档时，它必须将文档的内容与其样式信息结合。它分两个阶段处理文档：</p>
+<ol>
+<li>浏览器将 HTML 和 CSS 转化成 DOM （文档对象模型）。DOM在计算机内存中表示文档。它把文档内容和其样式结合在一起。</li>
+<li>浏览器显示 DOM 的内容。<br><img src="https://img-blog.csdn.net/20180504173144538?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="CSS工作流程图"></li>
+</ol>
+</blockquote>
+<h2 id="CSS的基本语法是怎样的"><a href="#CSS的基本语法是怎样的" class="headerlink" title="CSS的基本语法是怎样的"></a>CSS的基本语法是怎样的</h2><p>摘自<a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Syntax" target="_blank" rel="noopener">CSS 语法</a></p>
+<p>属性和值组成一个声明，多个声明构成声明块，声明块和选择器构成完整的CSS规则</p>
+<blockquote>
+<p>从最基本的层次来看，CSS是由两块内容组合而成的：</p>
+<ul>
+<li><strong>属性（Propertie）</strong>：一些人类可理解的标识符，这些标识符指出你想修改哪一些样式，例如：字体，宽度，背景颜色等。</li>
+<li><strong>属性值（Value）</strong>：每个指定的属性都需要给定一个值，这个值表示你想把那些样式特征修改成什么样，例如，你想把字体，宽度或背景颜色改成什么。<br>与值配对的属性被称为<strong>CSS声明</strong>。CSS声明会被放置在一个CSS声明块中。最后，CSS声明块与选择器相结合形成一个CSS规则集（或CSS规则）。</li>
+</ul>
+</blockquote>
+<h3 id="CSS声明"><a href="#CSS声明" class="headerlink" title="CSS声明"></a>CSS声明</h3><blockquote>
+<p>属性和属性值之间，用英文半角冒号 (:) 隔离，如下图所示。<br><img src="https://img-blog.csdn.net/20180504173322750?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="CSS声明"></p>
+</blockquote>
+<h3 id="CSS声明块"><a href="#CSS声明块" class="headerlink" title="CSS声明块"></a>CSS声明块</h3><blockquote>
+<p>声明按<strong>块</strong>分组，每一组声明都用一对大括号包裹，用 (<code>{</code>) 开始，用 (<code>}</code>) 结束。<br><strong>声明块</strong>里的每一个声明必须用半角分号（<code>;</code>）分隔，否则代码会不生效（至少不会按预期结果生效）。声明块里的最后一个声明结束的地方，不需要加分号，但是最后加分号是个好习惯，因为可以防止在后续增加声明时忘记加分号。<br><img src="https://img-blog.csdn.net/2018050417345052?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="CSS声明块"></p>
+</blockquote>
+<h3 id="CSS-选择器和规则"><a href="#CSS-选择器和规则" class="headerlink" title="CSS 选择器和规则"></a>CSS 选择器和规则</h3><blockquote>
+<p>我们的拼图还少了一块——我们需要讨论一下如何告知我们的声明块：哪些元素是它们需要应用的。通过在每个声明块前加上选择器（selector）来&gt;完成这一动作，选择器是一种模式，它能在页面上匹配一些元素。这将使相关的声明仅被应用到被选择的元素上。选择器加上声明块被称为规则集&gt;（ruleset），通常简称规则（rule）。<br><img src="https://img-blog.csdn.net/20180504173539653?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ2NTQ3MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="CSS 选择器和规则"></p>
+</blockquote>
+<h2 id="CSS选择器是什么概念，简单选择器和属性选择器是什么"><a href="#CSS选择器是什么概念，简单选择器和属性选择器是什么" class="headerlink" title="CSS选择器是什么概念，简单选择器和属性选择器是什么"></a>CSS选择器是什么概念，简单选择器和属性选择器是什么</h2><h3 id="CSS选择器是什么概念"><a href="#CSS选择器是什么概念" class="headerlink" title="CSS选择器是什么概念"></a>CSS选择器是什么概念</h3><p>摘自<a href="http://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="noopener">CSS 选择器参考手册</a></p>
+<blockquote>
+<p>在 CSS 中，选择器是一种模式，用于选择需要添加样式的元素。</p>
+</blockquote>
+<p>摘自<a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Syntax" target="_blank" rel="noopener">CSS 语法 - CSS 选择器和规则</a></p>
+<blockquote>
+<p>选择器是一种模式，它能在页面上匹配一些元素。选择器加上声明块被称为<strong>规则集</strong>（<strong>ruleset</strong>），通常简称规则（<strong>rule</strong>）。</p>
+</blockquote>
+<h3 id="简单选择器是什么"><a href="#简单选择器是什么" class="headerlink" title="简单选择器是什么"></a>简单选择器是什么</h3><p>摘自<a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Simple_selectors" target="_blank" rel="noopener">简单选择器</a></p>
+<blockquote>
+<p><strong>简单选择器（Simple selectors）</strong>：通过元素类型、class 或 id 匹配一个或多个元素。</p>
+</blockquote>
+<h3 id="属性选择器是什么"><a href="#属性选择器是什么" class="headerlink" title="属性选择器是什么"></a>属性选择器是什么</h3><p>摘自<a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors" target="_blank" rel="noopener">属性选择器</a></p>
+<blockquote>
+<p><strong>属性选择器（Attribute selectors）</strong>：通过 属性 / 属性值 匹配一个或多个元素。</p>
+</blockquote>
+<h2 id="文本样式都有哪些相关属性，对应哪些值"><a href="#文本样式都有哪些相关属性，对应哪些值" class="headerlink" title="文本样式都有哪些相关属性，对应哪些值"></a>文本样式都有哪些相关属性，对应哪些值</h2><p>参考自<a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/%E4%B8%BA%E6%96%87%E6%9C%AC%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F/Fundamentals" target="_blank" rel="noopener">基本文本和字体样式</a></p>
+<blockquote>
+<p>用于样式文本的 CSS 属性通常可以分为两类。</p>
+<ul>
+<li><strong>字体样式</strong>: 作用于字体的属性，会直接应用到文本中，比如使用哪种字体，字体的大小是怎样的，字体是粗体还是斜体，等等。</li>
+<li><strong>文本布局风格</strong>: 作用于文本的间距以及其他布局功能的属性，比如，允许操纵行与字之间的空间，以及在内容框中，文本如何对齐。</li>
+</ul>
+</blockquote>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><h4 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h4><p>参考<br><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Values_and_units#Colors" target="_blank" rel="noopener">CSS的值和单位 - 颜色</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/color_value#Color_keywords" target="_blank" rel="noopener"><code>&lt;color&gt;</code></a><br><a href="http://www.w3school.com.cn/html/html_colors.asp" target="_blank" rel="noopener">HTML 颜色</a></p>
+<blockquote>
+<p>color 属性设置选中元素的前景内容的颜色</p>
+</blockquote>
+<p>描述color值的方式有颜色名（色彩关键字）、Color HEX（RBG十六进制数，例如#000000对应黑色）、Color RGB(rgb(0,0,0))</p>
+<h5 id="色彩关键字"><a href="#色彩关键字" class="headerlink" title="色彩关键字"></a>色彩关键字</h5><blockquote>
+<p>色彩关键字是不区分大小写的标识符，它表示一个具体的颜色，例如 <code>red, blue, brown, lightseagreen</code> 。</p>
+</blockquote>
+<h5 id="rgb"><a href="#rgb" class="headerlink" title="rgb()"></a>rgb()</h5><blockquote>
+<p>颜色可以使用红-绿-蓝（red-green-blue (RGB)）模式的两种方式被定义：<br><strong>十六进制符号 #RRGGBB 和 #RGB</strong></p>
+<ul>
+<li>“<code>#</code>“ 后跟6位十六进制字符（0-9, A-F）</li>
+<li>“<code>#</code>“ 后跟3位十六进制字符（0-9, A-F）。<br>三位数的 RGB 符号（#RGB）和六位数的形式（#RRGGBB）是相等的。<br>例如， #f03 和 #ff0033 代表同样的颜色。<br>函数符 rgb(R,G,B)<br>“<code>rgb</code>“ 后跟3个<code>&lt;integer&gt;</code> 或3个 <code>&lt;percentage&gt;</code>值。<br>整数 255 相当于 100%，和十六进制符号里的 F 或 FF 。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; /* These examples all specify the same RGB color: */</span><br><span class="line">&gt; #f03</span><br><span class="line">&gt; #F03</span><br><span class="line">&gt; #ff0033</span><br><span class="line">&gt; #FF0033</span><br><span class="line">&gt; rgb(255,0,51)</span><br><span class="line">&gt; rgb(255, 0, 51)</span><br><span class="line">&gt; rgb(255, 0, 51.2) /* ERROR! Don&apos;t use fractions, use integers */ </span><br><span class="line">&gt; rgb(100%,0%,20%)</span><br><span class="line">&gt; rgb(100%, 0%, 20%)</span><br><span class="line">&gt; rgb(100%, 0, 20%) /* ERROR! Don&apos;t mix up integer and percentage notation */</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h5 id="hsl"><a href="#hsl" class="headerlink" title="hsl()"></a>hsl()</h5><blockquote>
+<p>颜色也可以使用 hsl() 函数符被定义为色相-饱和度-明度（Hue-saturation-lightness）模式。HSL 相比 RGB 的优点是更加直观：你可以估算你想要<br>的颜色，然后微调。它也更易于创建相称的颜色集合。（通过保持相同的色相并改变明度/暗度和饱和度）。</p>
+</blockquote>
+<blockquote>
+<p><strong>色相（Hue）</strong>表示色环（即代表彩虹的一个圆环）的一个角度。这个角度作为一个无单位的 <code>&lt;number&gt;</code> 被给出。定义 red=0=360，其它颜色分散于圆环，所以 green=120, blue=240，以此类推。作为一个角度，它隐含像 -120=240 和 480=120 这样的回环。</p>
+</blockquote>
+<blockquote>
+<p>饱和度和明度由百分数来表示。<br><code>100%</code> 是满<strong>饱和度</strong>，而 <code>0%</code> 是一种灰度。<br><code>100%</code><strong>明度</strong>是白色，<code>0%</code> 明度是黑色，而 <code>50%</code> 明度是“一般的”。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">hsl(0,  100%,50%)    /* red */   </span><br><span class="line">hsl(30, 100%,50%)                 </span><br><span class="line">hsl(60, 100%,50%)                </span><br><span class="line">hsl(90, 100%,50%)                </span><br><span class="line">hsl(120,100%,50%)    /* green */ </span><br><span class="line">hsl(150,100%,50%)                </span><br><span class="line">hsl(180,100%,50%)                </span><br><span class="line">hsl(210,100%,50%)                </span><br><span class="line">hsl(240,100%,50%)    /* blue */  </span><br><span class="line">hsl(270,100%,50%)                </span><br><span class="line">hsl(300,100%,50%)                </span><br><span class="line">hsl(330,100%,50%)                </span><br><span class="line">hsl(360,100%,50%)    /* red */   </span><br><span class="line"></span><br><span class="line">hsl(120,100%,25%)    /* dark green */  </span><br><span class="line">hsl(120,100%,50%)    /* green */       </span><br><span class="line">hsl(120,100%,75%)    /* light green */ </span><br><span class="line"></span><br><span class="line">hsl(120,100%,50%)    /* green */  </span><br><span class="line">hsl(120, 67%,50%)                 </span><br><span class="line">hsl(120, 33%,50%)                 </span><br><span class="line">hsl(120,  0%,50%)                 </span><br><span class="line"></span><br><span class="line">hsl(120, 60%,70%)    /* pastel green */</span><br></pre></td></tr></table></figure>
+<h5 id="rgba"><a href="#rgba" class="headerlink" title="rgba()"></a>rgba()</h5><blockquote>
+<p>颜色可以使用 rgba() 函数符在红-绿-蓝-阿尔法（RGBa）模式下被定义。RGBa 扩展了 RGB 颜色模式，它包含了阿尔法通道，允许设定一个颜色的透明度。<br><strong> a </strong>表示透明度：0=透明；1=不透明；</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rgba(255,0,0,0.1)    /* 10% opaque red */  </span><br><span class="line">rgba(255,0,0,0.4)    /* 40% opaque red */  </span><br><span class="line">rgba(255,0,0,0.7)    /* 70% opaque red */  </span><br><span class="line">rgba(255,0,0,  1)    /* full opaque red */</span><br></pre></td></tr></table></figure>
+<h5 id="hsla"><a href="#hsla" class="headerlink" title="hsla()"></a>hsla()</h5><blockquote>
+<p>颜色可以使用 hsla() 函数符在色相-饱和度-明度-阿尔法（HSLa）模式下被定义。HSLa 扩展自 HSL 颜色模式，包含了阿尔法通道，可以规定一个颜色的透明度。<br><strong>a </strong>表示透明度：0=透明；1=不透明；</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hsla(240,100%,50%,0.05)   /* 5% opaque blue */   </span><br><span class="line">hsla(240,100%,50%, 0.4)   /* 40% opaque blue */  </span><br><span class="line">hsla(240,100%,50%, 0.7)   /* 70% opaque blue */  </span><br><span class="line">hsla(240,100%,50%,   1)   /* full opaque blue */</span><br></pre></td></tr></table></figure>
+<h4 id="字体种类"><a href="#字体种类" class="headerlink" title="字体种类"></a>字体种类</h4><blockquote>
+<p>要在你的文本上设置一个不同的字体，你可以使用 font-family  属性，这个允许你为浏览器指定一个字体 (或者一个字体的列表)，然后浏览器可以将这种字体应用到选中的元素上。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">  font-family: arial;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p><strong>字体栈</strong> : 由于你无法保证你想在你的网页上使用的字体的可用性 (甚至一个网络字体可能由于某些原因而出错), 你可以提供一个字体栈 (font stack)，这样的话，浏览器就有多种字体可以选择了。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">  font-family: &quot;Trebuchet MS&quot;, Verdana, sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h4><blockquote>
+<ul>
+<li><code>px</code> (像素): 将像素的值赋予给你的文本。这是一个绝对单位， 它导致了在任何情况下，页面上的文本所计算出来的像素值都是一样的。</li>
+<li><code>em</code> : 1em 等于我们设计的当前元素的父元素上设置的字体大小</li>
+<li><code>rem</code> : 这个单位的效果和 <code>em</code> 差不多，除了 1<code>rem</code> 等于 HTML 中的根元素的字体大小， (i.e. <code>&lt;html&gt;</code>) ，而不是父元素。</li>
+</ul>
+</blockquote>
+<h4 id="字体样式，字体粗细，文本转换和文本装饰"><a href="#字体样式，字体粗细，文本转换和文本装饰" class="headerlink" title="字体样式，字体粗细，文本转换和文本装饰"></a>字体样式，字体粗细，文本转换和文本装饰</h4><blockquote>
+<p>CSS 提供了 4 种常用的属性来改变文本的样子：</p>
+<ul>
+<li><code>font-style</code>: 用来打开和关闭文本 italic (斜体)。<ul>
+<li><code>normal</code>: 将文本设置为普通字体 (将存在的斜体关闭)</li>
+<li><code>italic</code>: 如果当前字体的斜体版本可用，那么文本设置为斜体版本；如果不可用，那么会利用 <code>oblique</code> 状态来模拟 <code>italics</code>。</li>
+<li><code>oblique</code>: 将文本设置为斜体字体的模拟版本，也就是将普通文本倾斜的样式应用到文本中。</li>
+</ul>
+</li>
+<li><code>font-weight</code>: 设置文字的粗体大小。<ul>
+<li><code>normal</code>, <code>bold</code>: 普通或者<strong>加粗</strong>的字体粗细</li>
+<li><code>lighter</code>, <code>bolder</code>: 将当前元素的粗体设置为比其父元素粗体更细或更粗一步。<code>100</code>–<code>900</code>: 数值粗体值，如果需要，可提供比上述关键字更精细的粒度控制。</li>
+</ul>
+</li>
+<li><code>text-transform</code>: 允许你设置要转换的字体。值包括：<ul>
+<li><code>none</code>: 防止任何转型。</li>
+<li><code>uppercase</code>: 将所有文本转为大写。</li>
+<li><code>lowercase</code>: 将所有文本转为小写。</li>
+<li><code>capitalize</code>: 转换所有单词让其首字母大写。</li>
+<li><code>full-width</code>: 将所有字形转换成固定宽度的正方形，类似于等宽字体，允许对齐。拉丁字符以及亚洲语言字形（如中文，日文，韩文）</li>
+</ul>
+</li>
+<li><code>text-decoration</code>: 设置/取消字体上的文本装饰 (你将主要使用此方法在设置链接时取消设置链接上的默认下划线。) 可用值为：<ul>
+<li><code>none</code>: 取消已经存在的任何文本装饰。</li>
+<li><code>underline</code>: 文本下划线.</li>
+<li><code>overline</code>: 文本上划线</li>
+<li><code>line-through</code>: 穿过文本的线</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h4 id="文字阴影"><a href="#文字阴影" class="headerlink" title="文字阴影"></a>文字阴影</h4><blockquote>
+<p>你可以为你的文本应用阴影，使用 text-shadow 属性。这最多需要 4 个值，如下例所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;  text-shadow: 4px 4px 5px red;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p> 4 个属性如下:</p>
+<ol>
+<li>阴影与原始文本的水平偏移，可以使用大多数的 CSS 单位  <a href="https://developer.mozilla.org/zh-CN/Learn/CSS/Introduction_to_CSS/Values_and_units#Length_and_size" target="_blank" rel="noopener">length and size units</a>, 但是 px 是比较合适的。这个值必须指定。</li>
+<li>阴影与原始文本的垂直偏移;效果基本上就像水平偏移，除了它向上/向下移动阴影，而不是左/右。这个值必须指定。</li>
+<li>模糊半径 - 更高的值意味着阴影分散得更广泛。如果不包含此值，则默认为0，这意味着没有模糊。可以使用大多数的 CSS 单位 <a href="https://developer.mozilla.org/zh-CN/Learn/CSS/Introduction_to_CSS/Values_and_units#Length_and_size" target="_blank" rel="noopener">length and size units</a></li>
+<li>阴影的基础颜色，可以使用大多数的 CSS 颜色单位 CSS color unit. 如果没有指定，默认为 black.</li>
+</ol>
+</blockquote>
+<h3 id="文本布局"><a href="#文本布局" class="headerlink" title="文本布局"></a>文本布局</h3><h4 id="文本对齐"><a href="#文本对齐" class="headerlink" title="文本对齐"></a>文本对齐</h4><blockquote>
+<p> <code>text-align</code> 属性用来控制文本如何和它所在的内容盒子对齐。</p>
+<ul>
+<li><code>left</code>: 左对齐文本。</li>
+<li><code>right</code>: 右对齐文本。</li>
+<li><code>center</code>: 居中文字</li>
+<li><code>justify</code>: 使文本展开，改变单词之间的差距，使所有文本行的宽度相同。</li>
+</ul>
+</blockquote>
+<h4 id="行高"><a href="#行高" class="headerlink" title="行高"></a>行高</h4><blockquote>
+<p> <code>line-height</code> 属性设置文本每行之间的高，可以接受大多数单位 <a href="https://developer.mozilla.org/zh-CN/Learn/CSS/Introduction_to_CSS/Values_and_units#Length_and_size" target="_blank" rel="noopener">length and size units</a>，不过也可以设置一个无单位的值，作为乘数，通常这种是比较好的做法。无单位的值乘以 font-size 来获得 line-height。当行与行之间拉开空间，正文文本通常看起来更好更容易阅读。推荐的行高大约是 1.5–2 (双倍间距。) 所以要把我们的文本行高设置为字体高度的1.5倍，你可以使用这个:<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; line-height: 1.5;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="字母和字间距"><a href="#字母和字间距" class="headerlink" title="字母和字间距"></a>字母和字间距</h4><blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/letter-spacing" target="_blank" rel="noopener">letter-spacing</a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/word-spacing" target="_blank" rel="noopener">word-spacing</a> 属性允许你设置你的文本中的字母与字母之间的间距、或是字与字之间的间距。<br>它们可以接受大多数单位<a href="https://developer.mozilla.org/zh-CN/Learn/CSS/Introduction_to_CSS/Values_and_units#Length_and_size" target="_blank" rel="noopener">length and size units</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p::first-line &#123;</span><br><span class="line">  letter-spacing: 2px;</span><br><span class="line">  word-spacing: 4px;</span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/IFE2018/" rel="tag"># IFE2018</a>
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/02/ife2018-零基础学院-day-2/" rel="next" title="ife2018 零基础学院 day 2">
+                <i class="fa fa-chevron-left"></i> ife2018 零基础学院 day 2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/09/ife2018-零基础学院-day-4/" rel="prev" title="ife2018 零基础学院 day 4">
+                ife2018 零基础学院 day 4 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/timg.jpg" alt="一汪清水徐徐入梦">
+            
+              <p class="site-author-name" itemprop="name">一汪清水徐徐入梦</p>
+              <div class="site-description motion-element" itemprop="description">不经一番寒彻骨，怎得梅花扑鼻香。 若无苦学，怎得甜果。</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/PuzzledAlien" title="GitHub &rarr; https://github.com/PuzzledAlien" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.zhihu.com/people/on-the-way23" title="知乎 &rarr; http://www.zhihu.com/people/on-the-way23" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>知乎</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://blog.csdn.net/u014654707" title="CSDN &rarr; http://blog.csdn.net/u014654707" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>CSDN</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.cnblogs.com/AlienXu/" title="博客园 &rarr; http://www.cnblogs.com/AlienXu/" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>博客园</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ife2018-零基础学院-第三天：让简历有点色彩"><span class="nav-number">1.</span> <span class="nav-text">ife2018 零基础学院 第三天：让简历有点色彩</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是CSS，CSS是如何工作的"><span class="nav-number">1.1.</span> <span class="nav-text">什么是CSS，CSS是如何工作的!</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是CSS"><span class="nav-number">1.1.1.</span> <span class="nav-text">什么是CSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS如何工作"><span class="nav-number">1.1.2.</span> <span class="nav-text">CSS如何工作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS的基本语法是怎样的"><span class="nav-number">1.2.</span> <span class="nav-text">CSS的基本语法是怎样的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS声明"><span class="nav-number">1.2.1.</span> <span class="nav-text">CSS声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS声明块"><span class="nav-number">1.2.2.</span> <span class="nav-text">CSS声明块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-选择器和规则"><span class="nav-number">1.2.3.</span> <span class="nav-text">CSS 选择器和规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS选择器是什么概念，简单选择器和属性选择器是什么"><span class="nav-number">1.3.</span> <span class="nav-text">CSS选择器是什么概念，简单选择器和属性选择器是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS选择器是什么概念"><span class="nav-number">1.3.1.</span> <span class="nav-text">CSS选择器是什么概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单选择器是什么"><span class="nav-number">1.3.2.</span> <span class="nav-text">简单选择器是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器是什么"><span class="nav-number">1.3.3.</span> <span class="nav-text">属性选择器是什么</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本样式都有哪些相关属性，对应哪些值"><span class="nav-number">1.4.</span> <span class="nav-text">文本样式都有哪些相关属性，对应哪些值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#字体"><span class="nav-number">1.4.1.</span> <span class="nav-text">字体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#颜色"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">颜色</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#色彩关键字"><span class="nav-number">1.4.1.1.1.</span> <span class="nav-text">色彩关键字</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#rgb"><span class="nav-number">1.4.1.1.2.</span> <span class="nav-text">rgb()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hsl"><span class="nav-number">1.4.1.1.3.</span> <span class="nav-text">hsl()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#rgba"><span class="nav-number">1.4.1.1.4.</span> <span class="nav-text">rgba()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hsla"><span class="nav-number">1.4.1.1.5.</span> <span class="nav-text">hsla()</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字体种类"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">字体种类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字体大小"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">字体大小</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字体样式，字体粗细，文本转换和文本装饰"><span class="nav-number">1.4.1.4.</span> <span class="nav-text">字体样式，字体粗细，文本转换和文本装饰</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文字阴影"><span class="nav-number">1.4.1.5.</span> <span class="nav-text">文字阴影</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本布局"><span class="nav-number">1.4.2.</span> <span class="nav-text">文本布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文本对齐"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">文本对齐</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#行高"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">行高</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字母和字间距"><span class="nav-number">1.4.2.3.</span> <span class="nav-text">字母和字间距</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一汪清水徐徐入梦</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'YYEIb4e1DglYCTimm82B7iq8-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'YYEIb4e1DglYCTimm82B7iq8-gzGzoHsz',
+                'X-LC-Key': 'uDaWgpHAtQyu55OhciRlDNv2',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

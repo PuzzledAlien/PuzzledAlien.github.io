@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="自建梯子，科学文明上网！">
+<meta name="keywords" content="vultr,shadowsocks,火狐浏览器,科学上网">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科学上网 - vultr + shadowsocks + 火狐浏览器">
+<meta property="og:url" content="http://puzzledalien.github.io/2016/12/02/科学上网 - vultr + shadowsocks + 火狐浏览器/index.html">
+<meta property="og:site_name" content="劝学园">
+<meta property="og:description" content="自建梯子，科学文明上网！">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202134956185.jpg">
+<meta property="og:image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202135303299.jpg">
+<meta property="og:image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202163716757.jpg">
+<meta property="og:image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202164001604.jpg">
+<meta property="og:image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202164833334.jpg">
+<meta property="og:updated_time" content="2018-05-01T22:17:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="科学上网 - vultr + shadowsocks + 火狐浏览器">
+<meta name="twitter:description" content="自建梯子，科学文明上网！">
+<meta name="twitter:image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202134956185.jpg">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://puzzledalien.github.io/2016/12/02/科学上网 - vultr + shadowsocks + 火狐浏览器/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>科学上网 - vultr + shadowsocks + 火狐浏览器 | 劝学园</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">劝学园</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">三更灯火五更鸡，正是男儿读书时。黑发不知勤学早，白首方悔读书迟。</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/PuzzledAlien" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://puzzledalien.github.io/2016/12/02/科学上网 - vultr + shadowsocks + 火狐浏览器/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一汪清水徐徐入梦">
+      <meta itemprop="description" content="不经一番寒彻骨，怎得梅花扑鼻香。 若无苦学，怎得甜果。">
+      <meta itemprop="image" content="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="劝学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">科学上网 - vultr + shadowsocks + 火狐浏览器
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-12-02 17:25:09" itemprop="dateCreated datePublished" datetime="2016-12-02T17:25:09+08:00">2016-12-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-02 06:17:08" itemprop="dateModified" datetime="2018-05-02T06:17:08+08:00">2018-05-02</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2016/12/02/科学上网 - vultr + shadowsocks + 火狐浏览器/" class="leancloud_visitors" data-flag-title="科学上网 - vultr + shadowsocks + 火狐浏览器">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>自建梯子，科学文明上网！</p>
+<a id="more"></a>
+<p>PS：下文中的<strong>现在</strong>都是在指记录的时间，即2016年12月2号</p>
+<h2 id="1、vultr的节点测试"><a href="#1、vultr的节点测试" class="headerlink" title="1、vultr的节点测试"></a>1、vultr的节点测试</h2><p>各节点测试地址请访问<a href="http://www.vultrvps.com/test-server" title="vultrvps" target="_blank" rel="noopener">http://www.vultrvps.com/test-server</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Location 地理位置</th>
+<th style="text-align:center">Hostname 官方测试服务器ip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(Asia)Tokyo[东京], Japan</td>
+<td style="text-align:center">hnd-jp-ping.vultr.com</td>
+</tr>
+<tr>
+<td>(AU) Sydney[悉尼], Australia</td>
+<td style="text-align:center">syd-au-ping.vultr.com</td>
+</tr>
+<tr>
+<td>(EU) Frankfurt[法兰克福], DE</td>
+<td style="text-align:center">fra-de-ping.vultr.com</td>
+</tr>
+<tr>
+<td>(EU) Amsterdam[阿姆斯特丹], NL</td>
+<td style="text-align:center">ams-nl-ping.vultr.com</td>
+</tr>
+<tr>
+<td>(EU) London[伦敦], UK</td>
+<td style="text-align:center">lon-gb-ping.vultr.com</td>
+</tr>
+<tr>
+<td>(EU) Paris[巴黎], France</td>
+<td style="text-align:center">par-fr-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Seattle[西雅图], Washington</td>
+<td style="text-align:center">wa-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Silicon Valley[美国硅谷], California</td>
+<td style="text-align:center">sjo-ca-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Los Angeles[洛杉矶], California</td>
+<td style="text-align:center">lax-ca-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Chicago[芝加哥], Illinois</td>
+<td style="text-align:center">il-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Dallas[达拉斯], Texas</td>
+<td style="text-align:center">tx-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>New York[纽约], New Jersey</td>
+<td style="text-align:center">nj-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Atlanta[亚特兰大], Georgia</td>
+<td style="text-align:center">ga-us-ping.vultr.com</td>
+</tr>
+<tr>
+<td>Miami[迈阿密], Florida</td>
+<td style="text-align:center">fl-us-ping.vultr.com</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>现在亚洲新增了新加坡机房。<br>Window系统测试连接vultr推荐使用pinginfoview，可点击下载-&gt;<a href="http://www.nirsoft.net/utils/pinginfoview.zip" target="_blank" rel="noopener">pinginfoview</a><br>测试工具参考博文：<a href="http://blog.csdn.net/noahsun1024/article/details/52196365" target="_blank" rel="noopener">搭建自己专属的vpn——选择一个vps</a><br>下载解压之后，点击exe文件，如图<br><img src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202134956185.jpg" alt="pinginfoview"><br>添加如下地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">hnd-jp-ping.vultr.com  </span><br><span class="line">syd-au-ping.vultr.com  </span><br><span class="line">fra-de-ping.vultr.com  </span><br><span class="line">ams-nl-ping.vultr.com  </span><br><span class="line">lon-gb-ping.vultr.com  </span><br><span class="line">par-fr-ping.vultr.com  </span><br><span class="line">wa-us-ping.vultr.com  </span><br><span class="line">sjo-ca-us-ping.vultr.com  </span><br><span class="line">lax-ca-us-ping.vultr.com  </span><br><span class="line">il-us-ping.vultr.com  </span><br><span class="line">nj-us-ping.vultr.com  </span><br><span class="line">tx-us-ping.vultr.com  </span><br><span class="line">ga-us-ping.vultr.com  </span><br><span class="line">fl-us-ping.vultr.com</span><br></pre></td></tr></table></figure>
+<p>如下图设置ping的时间间隔为1秒<br><img src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202135303299.jpg" alt="pinginfoview"><br>点击ok，等待10分钟之后，查看结果，建议综合考虑 % Failed 和 Minimum Ping Time<br>建议选择连接失败率低，连接时间短的节点。</p>
+<h2 id="2、创建vultr账户，并充值"><a href="#2、创建vultr账户，并充值" class="headerlink" title="2、创建vultr账户，并充值"></a>2、创建vultr账户，并充值</h2><p>建议使用我的推荐链接<a href="https://www.vultr.com/?ref=7039533" target="_blank" rel="noopener">https://www.vultr.com/?ref=7039533</a>注册账户，并充值。</p>
+<p>使用我的推荐链接注册并充值至少10刀，我的账户将收到30刀的推荐奖励，你使用超过一个月，我的账户中到账的30刀的奖励才是可用的。感谢支持。</p>
+<p>如果不使用我的推荐链接，也可以点击<a href="http://www.vultr.com" target="_blank" rel="noopener">官网</a>，自行注册账户。<strong>现在</strong>注册有奖励20刀的活动（2016年12月2号，写下该记录时仍有此活动）。</p>
+<p>创建账户之后，20刀的奖励会在你绑定信用卡，或者绑定paypal，充值5刀之后，下发到你的注册账户。我建议绑定paypal。vultr不支持绑定银联信用卡，并且信用卡解绑vultr账户需要给vultr官方发送解绑邮件，略显麻烦。</p>
+<p>不详细记录如何创建Server，操作很简单，如果实在不会操作，bing或baidu 搜索一下，有很详细的步骤介绍。</p>
+<p>根据喜好，选择不同的操作系统。我选择的是Ubuntu，所以安装shadowsocks的操作是基于Ubuntu系统，因为deploy new server要花费一点钱，为省钱我就没有一一尝试不同操作系统下安装shadowsocks。</p>
+<h2 id="3、安装及配置shadowsocks服务器端"><a href="#3、安装及配置shadowsocks服务器端" class="headerlink" title="3、安装及配置shadowsocks服务器端"></a>3、安装及配置shadowsocks服务器端</h2><p>一句话介绍：Shadowsocks是一个可穿透防火墙的快速代理。</p>
+<blockquote>
+<p><strong>服务端</strong></p>
+<p>安装</p>
+<p>Debian / Ubuntu:</p>
+<p>apt-get install python-pip<br>pip install shadowsocks</p>
+</blockquote>
+<p>摘录自<a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">Shadowsocks使用说明</a><br><strong>现在</strong> 最新的Python2版本是2.7，执行上文安装命令之后，通过命令</p>
+<blockquote>
+<p>sudo find / -name shadows*</p>
+</blockquote>
+<p>确定Shadowsocks的安装文件夹目录，我的安装目录是</p>
+<p><code>/usr/local/lib/python2.7/dist-packages/shadowsocks</code><br>敲击命令进入该目录：<br><code>cd /usr/local/lib/python2.7/dist-packages/shadowsocks</code></p>
+<p>创建配置文件，参见 <a href="https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File" target="_blank" rel="noopener">wiki</a> 操作如下：</p>
+<p>先创建配置文件：</p>
+<p><code>vim shadowsocks.json</code></p>
+<p>如何使用vim不做介绍，vultr创建server自带vim，不需安装vim。</p>
+<p>摘自wiki：</p>
+<blockquote>
+<p>Create a config file /etc/shadowsocks.json. Example:</p>
+</blockquote>
+<p>{<br>    “server”:”my_server_ip”,<br>    “server_port”:8388,<br>    “local_address”: “127.0.0.1”,<br>    “local_port”:1080,<br>    “password”:”mypassword”,<br>    “timeout”:300,<br>    “method”:”aes-256-cfb”,<br>    “fast_open”: false<br>}</p>
+<p>githup上wiki关于配置的解释是英文的</p>
+<p>我找到一个参考<a href="http://www.cnblogs.com/qingjoin/p/3843218.html" target="_blank" rel="noopener">ubuntu 上安装 shadowsocks server</a>：</p>
+<blockquote>
+<p>server 服务器 IP (IPv4/IPv6)，注意这也将是服务端监听的 IP 地址<br>server_port 服务器端口<br>local_port 本地端端口<br>password 用来加密的密码<br>timeout 超时时间（秒）<br>method 加密方法，可选择 “bf-cfb”, “aes-256-cfb”, “des-cfb”, “rc4”, 等等。默认是一种不安全的加密，推荐用 “aes-256-cfb”</p>
+</blockquote>
+<p>如果想要多开几个账号分享，可如下配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;server&quot;:&quot;my_server_ip&quot;,</span><br><span class="line">    &quot;server_port&quot;:8388,</span><br><span class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">    &quot;port_password&quot;:</span><br><span class="line">    &#123;</span><br><span class="line">	    &quot;local_port1&quot;:&quot;mypassword1&quot;</span><br><span class="line">	    &quot;local_port2&quot;:&quot;mypassword2&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">    &quot;timeout&quot;:300,</span><br><span class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</span><br><span class="line">    &quot;fast_open&quot;: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>至于如何启动Shadowsocks，以及开机启动Shadowsocks，可参考<a href="http://www.cnblogs.com/vincedotnet/p/3569648.html" target="_blank" rel="noopener">在ubuntu下安装shadowsocks</a> 、 <a href="http://www.cnblogs.com/qingjoin/p/3843218.html" target="_blank" rel="noopener">ubuntu 上安装 shadowsocks server</a> 或 <a href="http://blog.wifizoo.net/?post=370" target="_blank" rel="noopener">在ubuntu server上安装shadowsocks</a></p>
+<p>当然，也有人写了一键安装的脚本以方便大家安装Shadowsocks，可参考<a href="https://teddysun.com/342.html" target="_blank" rel="noopener">Shadowsocks Python版一键安装脚本</a></p>
+<h2 id="4、安装及配置Shadowsocks客户端"><a href="#4、安装及配置Shadowsocks客户端" class="headerlink" title="4、安装及配置Shadowsocks客户端"></a>4、安装及配置Shadowsocks客户端</h2><p>下载客户端地址：<a href="https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients#linux--server-side</a></p>
+<p>有支持 Windows、OS X 、Linux、iOS、Android等系统的客户端。</p>
+<p>我的系统是Windows10，所以主要参考wiki地址：<a href="https://github.com/shadowsocks/shadowsocks-windows/wiki/Shadowsocks-Windows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">Shadowsocks Windows 使用说明</a></p>
+<p>解压下载的zip包，只有一个exe可执行文件，打开界面如下如所示</p>
+<p><img src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202163716757.jpg" alt="Shadowsocks"></p>
+<p>添上自己的服务器地址，自己配置好的端口号和密码，点击确定。</p>
+<p>找到桌面右下脚的图标<img src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202164001604.jpg" alt="Shadowsocks图标">并鼠标右击</p>
+<p>选择 -&gt; 启用系统代理 -&gt; PAC模式<br>如图：</p>
+<p><img src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/20161202164833334.jpg" alt="PAC模式"></p>
+<p>因为我参与了Windows预览体验计划，并且设置的是Fast模式，所以仅仅如上的设置还不能正常科学上网。</p>
+<p>参考<a href="http://www.auooo.com/2015/06/26/shadowsocks%EF%BC%88%E5%BD%B1%E6%A2%AD%EF%BC%89%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/" target="_blank" rel="noopener">ShadowSocks（影梭）不完全指南</a>后，决定按照该文作者的建议设置浏览器上网的方式。</p>
+<p>摘录：</p>
+<blockquote>
+<p>方式一（推荐）：<br>浏览器代理上网。具体需要配置浏览器代理，具体的操作可以<a href="http://www.auooo.com/2015/06/05/shadowsocks%e7%9b%b8%e5%85%b3%e4%b8%8b%e8%bd%bd/" target="_blank" rel="noopener">参考这里</a>。配置完成后即可实现科学上网。</p>
+</blockquote>
+<blockquote>
+<p>方式二：<br>利用客户端自带的代理上网。参考下文的 Windows 版本客户端选项中启用系统代理部分。</p>
+</blockquote>
+<p>因为个人偏好，工作使用谷歌浏览器，工作之外习惯火狐浏览器，所以只配置了基于火狐浏览器的代理。</p>
+<p>火狐设置代理，参考<a href="http://boafanx.tabboa.com/73.boafanx" target="_blank" rel="noopener">火狐FoxyProxy配置教程</a></p>
+<p>火狐FoxyProxy配置教程写的十分详细，不在此记录中摘录。</p>
+<p>只是有一点想要强调，一定是一开始就打开Shadowsocks的代理，再按照教程的指导操作。其实教程作者也有一开文就交代了这问题。</p>
+<h2 id="5、一点无关紧要的话"><a href="#5、一点无关紧要的话" class="headerlink" title="5、一点无关紧要的话"></a>5、一点无关紧要的话</h2><p>建议创建vps之后就去创建一个root权限的账户，可参考<a href="http://www.cnblogs.com/devos/articles/3321676.html" target="_blank" rel="noopener">ubuntu 改变用户权限</a></p>
+<p>因为用户名root的密码是vultr生成的密码，该密码相当复杂。</p>
+<p>cmd连接vps，我一开始使用的是XShell，但是不知为何十分的慢，后来有前辈建议我使用Windows10自带的bash使用ssh登录，速度简直了，感觉像是在本地操作。这让我想起“微软希望所有Linux开发人员迁移到Windows 10”的报道，不禁感叹微软大法好。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh account@your_server_ip</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vultr/" rel="tag"># vultr</a>
+          
+            <a href="/tags/shadowsocks/" rel="tag"># shadowsocks</a>
+          
+            <a href="/tags/火狐浏览器/" rel="tag"># 火狐浏览器</a>
+          
+            <a href="/tags/科学上网/" rel="tag"># 科学上网</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/11/12/SELECT-INTO和INSERT-INTO-SELECT的区别/" rel="next" title="SELECT INTO和INSERT INTO SELECT的区别">
+                <i class="fa fa-chevron-left"></i> SELECT INTO和INSERT INTO SELECT的区别
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/18/There-is-already-an-open-DataReader-associated-with-this-Connection-which-must-be-closed-first/" rel="prev" title="There is already an open DataReader associated with this Connection which must be closed first">
+                There is already an open DataReader associated with this Connection which must be closed first <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://picture-1256176941.cos.ap-beijing.myqcloud.com/PuzzledAlien/timg.jpg" alt="一汪清水徐徐入梦">
+            
+              <p class="site-author-name" itemprop="name">一汪清水徐徐入梦</p>
+              <div class="site-description motion-element" itemprop="description">不经一番寒彻骨，怎得梅花扑鼻香。 若无苦学，怎得甜果。</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/PuzzledAlien" title="GitHub &rarr; https://github.com/PuzzledAlien" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.zhihu.com/people/on-the-way23" title="知乎 &rarr; http://www.zhihu.com/people/on-the-way23" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>知乎</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://blog.csdn.net/u014654707" title="CSDN &rarr; http://blog.csdn.net/u014654707" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>CSDN</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.cnblogs.com/AlienXu/" title="博客园 &rarr; http://www.cnblogs.com/AlienXu/" rel="noopener" target="_blank"><i class="fa fa-fw fa-arrow-right"></i>博客园</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、vultr的节点测试"><span class="nav-number">1.</span> <span class="nav-text">1、vultr的节点测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、创建vultr账户，并充值"><span class="nav-number">2.</span> <span class="nav-text">2、创建vultr账户，并充值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、安装及配置shadowsocks服务器端"><span class="nav-number">3.</span> <span class="nav-text">3、安装及配置shadowsocks服务器端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、安装及配置Shadowsocks客户端"><span class="nav-number">4.</span> <span class="nav-text">4、安装及配置Shadowsocks客户端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、一点无关紧要的话"><span class="nav-number">5.</span> <span class="nav-text">5、一点无关紧要的话</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一汪清水徐徐入梦</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'YYEIb4e1DglYCTimm82B7iq8-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'YYEIb4e1DglYCTimm82B7iq8-gzGzoHsz',
+                'X-LC-Key': 'uDaWgpHAtQyu55OhciRlDNv2',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
